@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/siteleya/static/css/main.dad1995e.css",
+    "main.js": "/siteleya/static/js/main.2fb2ed21.js",
+    "static/js/787.578e2cd5.chunk.js": "/siteleya/static/js/787.578e2cd5.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/siteleya/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
+    "static/media/bootstrap-icons.woff2?": "/siteleya/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
+    "index.html": "/siteleya/index.html",
+    "main.dad1995e.css.map": "/siteleya/static/css/main.dad1995e.css.map",
+    "main.2fb2ed21.js.map": "/siteleya/static/js/main.2fb2ed21.js.map",
+    "787.578e2cd5.chunk.js.map": "/siteleya/static/js/787.578e2cd5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dad1995e.css",
+    "static/js/main.2fb2ed21.js"
+  ]
+}
