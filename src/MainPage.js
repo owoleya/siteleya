@@ -7,6 +7,10 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import NXTE from './image/Frame 3.png';
+import ForgeLit from './image/Frame 2.png';
+
+
 
 const MainPage = () => {
 
@@ -76,6 +80,17 @@ const MainPage = () => {
         <motion.p variants={itemVariants} className="context">Partaken in an internship which mainly revolved around designing an eKYC system. Tasks involved data extraction whilst researching and making machine learning models  image processing related projects using modern AI solutions. </motion.p>
       </motion.div> */}
 
+<motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="about-container"
+      >
+        <motion.h2 variants={itemVariants} className="title">Projects</motion.h2>
+        <motion.img src={NXTE} variants={itemVariants} style={{ width: '350px', height: '350px',marginRight:'15px' }}></motion.img>
+        <motion.img src={ForgeLit} variants={itemVariants} style={{ width: '350px', height: '350px',marginRight:'15px' }}></motion.img>
+        </motion.div>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -104,8 +119,8 @@ const MainPage = () => {
       </Button>
       </div>
       </motion.div>
-        <div>
-
+        <div className="about-container">
+        <p className="context" style={{marginTop: '30px',fontWeight:"100",fontSize:"10px"}}>Written in React by Pyotr Lye, 2023. All rights reserved.</p> 
     </div>
     </motion.div>
     </header>

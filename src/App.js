@@ -6,7 +6,7 @@ import MainPage from './MainPage';
 function App() {
   // const location = useLocation();
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <header className='background'>
       <Routes>
         <Route path="/" element={<HomePage />} />
