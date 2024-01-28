@@ -41,44 +41,68 @@ const HomePage = () => {
     visible: { opacity: 1 },
   };
 
+  const exitVariants = {
+    current: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -50 ,
+      transition: {
+        duration: 0.8,
+        ease: "easeInOut",
+        staggerChildren: 1,
+      }},
+  }
+  const [exitAnimation, setExitAnimation] = useState(false);
+
   const handleButtonClick = () => {
-    // Set shouldRedirect to true to trigger the navigation
-    setShouldRedirect(true);
+    // Set exit animation to trigger the exit animation for the main container
+    setExitAnimation(true);
+  
+    // Wait for the exit animation to complete (adjust the timeout based on your animation duration)
+    setTimeout(() => {
+      // After the exit animation is complete, set shouldRedirect to true to trigger the navigation
+      setShouldRedirect(true);
+    }, 800); // Adjust the timeout based on your actual exit animation duration
   };
 
   return (<AnimatedPage>
     <div className="App">
       <header className="App-header">
         <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          style={{ width: '50%', height: '50%' }}
+        variants={exitVariants}
+        initial="current"
+        animate={exitAnimation ? "exit" : "current"}
+        style={{ width: '50%', height: '50%' }}
         >
-          <motion.p
-            className="homepage-header-text"
-            variants={itemVariants}
-            style={{ textAlign: 'left' }}
-          >
-            Hi, my name is
-          </motion.p>
           <motion.div
-            variants={logoVariants}
-            style={{ width: '100%', height: '100%' }}
-            transition={{ delay: 15 }}
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            
           >
-            <AnimatedName />
-          </motion.div>
-          <motion.div
-            variants={itemVariants}
-            style={{ width: '100%', textAlign: 'right' }}
-          >
-            <p className="homepage-header-text" style={{ fontSize: '18px' }}>
-              Software Engineer - Motion Design
-            </p>
-          </motion.div>
-          <motion.div variants={itemVariants} style={{ height: '400%' }}>
-            <HomePageButton onClick={handleButtonClick} />
+            <motion.p
+              className="homepage-header-text"
+              variants={itemVariants}
+              style={{ textAlign: 'left' }}
+            >
+              Hi, my name is
+            </motion.p>
+            <motion.div
+              variants={logoVariants}
+              style={{ width: '100%', height: '100%' }}
+              transition={{ delay: 15 }}
+            >
+              <AnimatedName />
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              style={{ width: '100%', textAlign: 'right' }}
+            >
+              <p className="homepage-header-text" style={{ fontSize: '18px' }}>
+                Software Engineer - Motion Design
+              </p>
+            </motion.div>
+            <motion.div variants={itemVariants} style={{ height: '400%' }}>
+              <HomePageButton onClick={handleButtonClick} />
+            </motion.div>
           </motion.div>
         </motion.div>
       </header>
