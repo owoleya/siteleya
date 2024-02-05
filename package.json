@@ -4,16 +4,21 @@
   "private": false,
   "homepage": "https://owoleya.github.io/siteleya",
   "dependencies": {
+    "@react-three/drei": "^9.97.0",
+    "@react-three/fiber": "^8.15.16",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
+    "drei": "^2.2.21",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.0",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
+    "react-three-fiber": "^6.0.13",
+    "three": "^0.161.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -22,10 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b deploy"  
-  }
-  ,
-
+    "deploy": "gh-pages -d build -b final-build"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
