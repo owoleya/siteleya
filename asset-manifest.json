@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/siteleya/static/css/main.141a953a.css",
+    "main.js": "/siteleya/static/js/main.43280150.js",
+    "static/js/787.2a23d455.chunk.js": "/siteleya/static/js/787.2a23d455.chunk.js",
+    "static/media/resumeJan2024.png": "/siteleya/static/media/resumeJan2024.af9aa280166aaebbe738.png",
+    "static/media/parvorbital.png": "/siteleya/static/media/parvorbital.002ebed2ec8cffed0f70.png",
+    "static/media/forgerylit.png": "/siteleya/static/media/forgerylit.fb0b864a5ad97dadc70f.png",
+    "static/media/premade5.png": "/siteleya/static/media/premade5.0380472458d723a71ff2.png",
+    "static/media/nxte.png": "/siteleya/static/media/nxte.e41f5021068ceb47aabe.png",
+    "static/media/bootstrap-icons.woff?": "/siteleya/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
+    "static/media/bootstrap-icons.woff2?": "/siteleya/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
+    "index.html": "/siteleya/index.html",
+    "main.141a953a.css.map": "/siteleya/static/css/main.141a953a.css.map",
+    "main.43280150.js.map": "/siteleya/static/js/main.43280150.js.map",
+    "787.2a23d455.chunk.js.map": "/siteleya/static/js/787.2a23d455.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.141a953a.css",
+    "static/js/main.43280150.js"
+  ]
+}
