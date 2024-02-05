@@ -17,16 +17,16 @@ document.body.appendChild(renderer.domElement);
 var spheres = [];
 
 // Add cloud
-for (let i = 0; i <= 2500; i++) {
+for (let i = 0; i <= 1000; i++) {
   const geometry = new THREE.SphereGeometry(
     Math.random() * 0.4,
-    Math.random() * 16,
-    Math.random() * 16
+    Math.random() * 5,
+    Math.random() * 5
   );
   const material = new THREE.MeshBasicMaterial({
     color: 0xffffff,
     transparent: true,
-    opacity: 0.1,
+    opacity: 0.15,
   });
   const sphere = new THREE.Mesh(geometry, material);
   sphere.position.x += Math.round(Math.random() * 500) - 250;
