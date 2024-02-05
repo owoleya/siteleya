@@ -12,7 +12,6 @@ const HomePage = () => {
   const [shouldRedirect, setShouldRedirect] = useState(false);
 
   useEffect(() => {
-    // If shouldRedirect is true, navigate to the main page
     if (shouldRedirect) {
       navigate('/main');
     }

@@ -11,12 +11,12 @@ const Project = ({ imageUrl, text1, text2 }) => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '300px', // Set the width to 300 pixels
-    height: '150px', // Set the height to 150 pixels
-    borderRadius: '50px', // Set border-radius for rounded corners
+    width: '300px',
+    height: '150px', 
+    borderRadius: '50px', 
     overflow: 'hidden',
-    border: '0px solid white', // Set initial border
-    transition: 'height 0.1s cubic-bezier(0.9, 0, 0.1, 1), border 0.06s ease-in-out', // Add transition for the border
+    border: '0px solid white',
+    transition: 'height 0.1s cubic-bezier(0.9, 0, 0.1, 1), border 0.06s ease-in-out',
   };
 
   const imageStyle = {
@@ -24,8 +24,8 @@ const Project = ({ imageUrl, text1, text2 }) => {
     height: '100%',
     borderRadius: '10px',
     objectFit: 'cover',
-    filter: 'blur(5px) brightness(70%)', // Set border-radius for rounded image
-    transition: 'transform 0.2s ease-in-out, filter 0.2s ease-in-out', // Add transition for zoom effect
+    filter: 'blur(5px) brightness(70%)',
+    transition: 'transform 0.2s ease-in-out, filter 0.2s ease-in-out',
   };
 
   const handleHover = () => {
@@ -63,10 +63,10 @@ const Project = ({ imageUrl, text1, text2 }) => {
             position: 'absolute',
             textAlign: 'center',
             opacity: isDescriptionVisible ? '0%' : '100%' ,
-            color: '#ffffff', // Text color
+            color: '#ffffff',
             fontFamily: 'Montserrat, sans-serif',
-            fontWeight: 600, // Font weight
-            fontSize: '32px', // Font size
+            fontWeight: 600,
+            fontSize: '32px',
             fontStyle: 'italic',
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', 
             transition: 'opacity 0.2s ease-in-out',
@@ -76,10 +76,10 @@ const Project = ({ imageUrl, text1, text2 }) => {
             textAlign: 'left',
             margin:'16px',
             opacity: isDescriptionVisible ? '100%' : '0%' ,
-            color: '#ffffff', // Text color
+            color: '#ffffff',
             fontFamily: 'Montserrat, sans-serif',
-            fontWeight: 300, // Font weight
-            fontSize: '16px', // Font size
+            fontWeight: 300,
+            fontSize: '16px',
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', 
             transition: 'opacity 0.2s ease-in-out',
         }} ref={textRef}>{text2}</div>
