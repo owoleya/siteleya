@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import ResumeOverlay from './components/resumeOverlay';
-import Resume from './image/resumeJan2024.png';
+import Resume from './image/resumeFeb2024.png';
 import Project from './components/projectComponent';
 
 import ForgeryLIT from './image/forgerylit.png'
